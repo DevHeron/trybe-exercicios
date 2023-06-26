@@ -1,3 +1,3 @@
-# Primeiro repositório feito para estudos na Trybe!
+# Meu repositório de exercícios
 
 Repositório para meu exercícios dentro da Trybe.
