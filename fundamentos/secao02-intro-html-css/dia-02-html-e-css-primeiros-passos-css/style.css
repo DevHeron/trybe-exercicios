@@ -1,0 +1,29 @@
+body {
+    font-size: 16px;
+}
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+}
+p {
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center;
+}
+
+li {
+    font-style: italic;
+    line-height: 40px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#fundoAmarelo {
+    background-color: yellow;
+}
+#fundoVermelho{
+    background-color: red;
+}
+#fundoMarrom {
+    background-color: brown;
+}
