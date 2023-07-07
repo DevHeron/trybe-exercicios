@@ -68,38 +68,50 @@
 // Exemplo: Bispo -> Diagonais.
 
 
-let nomeDaPeca = 'rainha';
-let resposta = '';
+// let nomeDaPeca = 'PEAO';
+// let resposta = '';
 
-switch (nomeDaPeca) {
-    case ('torre'):
-    resposta += 'A torre se move em linha reta horizontalmente e verticalmente pelo número de casas não ocupadas, até atingir o final do tabuleiro ou ser bloqueado por outra peça. Ele não pode pular outras peças. A torre captura no mesmo caminho em que se move, ocupando a casa onde se encontra a peça adversária.';
-    break;
-    case ('cavalo'):
-    resposta += 'É a única peça que pode saltar sobre as outras peças do tabuleiro, sejam elas amigas ou inimigas. O movimento executado pelo Cavalo é conhecido por “um-dois” ou “em L”. Ele pode andar duas casas na horizontal e uma na vertical, ou duas na vertical e uma na horizontal, uma na horizontal e duas na vertical, e assim por diante. Quando a casa de saída do Cavalo for escura, a casa de chegada será clara, e vice-versa.';
-    break;
-    case ('bispo'):
-    resposta += 'Move-se na diagonal, quantas casas quiser. O Bispo que iniciar a partida em uma casa branca somente poderá transitar pelas brancas, enquanto o Bispo que inicia em uma casa preta somente poderá transitar pelas casas pretas.';
-    break;
-    case ('rainha'):
-    resposta += 'é a peça mais poderosa do jogo, uma vez que seu movimento combina o da torre e o do bispo, ou seja, pode mover-se pelas colunas, fileiras e diagonal de outra cor.';
-    break;
-    case ('rei'):
-    resposta += 'move-se para todas as direções pela vertical, horizontal ou diagonal, mas apenas uma casa por lance'
-    break;
-    case('peao'):
-    resposta += 'Move-se sempre uma casa para frente, exceto no primeiro movimento, quando pode mover-se duas casas. O peão é a única peça que não pode retroceder, e também a única que efetua a captura com um movimento diferente do utilizado para avançar no tabuleiro. O peão pode capturar as peças que estejam uma fileira acima, mas nas colunas adjacentes a sua.'
-    default:
-    console.log('Escolha uma peça válida');
-}
+// switch (nomeDaPeca.toLowerCase()) {
+//     case 'torre':
+//     resposta += 'A torre se move em linha reta horizontalmente e verticalmente pelo número de casas não ocupadas, até atingir o final do tabuleiro ou ser bloqueado por outra peça. Ele não pode pular outras peças. A torre captura no mesmo caminho em que se move, ocupando a casa onde se encontra a peça adversária.';
+//     break;
+//     case 'cavalo':
+//     resposta += 'É a única peça que pode saltar sobre as outras peças do tabuleiro, sejam elas amigas ou inimigas. O movimento executado pelo Cavalo é conhecido por “um-dois” ou “em L”. Ele pode andar duas casas na horizontal e uma na vertical, ou duas na vertical e uma na horizontal, uma na horizontal e duas na vertical, e assim por diante. Quando a casa de saída do Cavalo for escura, a casa de chegada será clara, e vice-versa.';
+//     break;
+//     case 'bispo':
+//     resposta += 'Move-se na diagonal, quantas casas quiser. O Bispo que iniciar a partida em uma casa branca somente poderá transitar pelas brancas, enquanto o Bispo que inicia em uma casa preta somente poderá transitar pelas casas pretas.';
+//     break;
+//     case 'rainha':
+//     resposta += 'é a peça mais poderosa do jogo, uma vez que seu movimento combina o da torre e o do bispo, ou seja, pode mover-se pelas colunas, fileiras e diagonal de outra cor.';
+//     break;
+//     case 'rei':
+//     resposta += 'move-se para todas as direções pela vertical, horizontal ou diagonal, mas apenas uma casa por lance'
+//     break;
+//     case'peao':
+//     resposta += 'Move-se sempre uma casa para frente, exceto no primeiro movimento, quando pode mover-se duas casas. O peão é a única peça que não pode retroceder, e também a única que efetua a captura com um movimento diferente do utilizado para avançar no tabuleiro. O peão pode capturar as peças que estejam uma fileira acima, mas nas colunas adjacentes a sua.';
+//     break;
+//     default:
+//     console.log('Escolha uma peça válida');
+// }
 
-console.log(resposta);
+// console.log(resposta);
 
 
 
 
 //exercício6:
 
+let num1 = 1;
+let num2 = 2;
+let num3 = 3;
+
+isEven = false;
+
+if ((num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0)) {
+    isEven = true;
+}
+
+console.log(isEven);
 
 
 //exercício7:
