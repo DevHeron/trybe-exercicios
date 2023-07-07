@@ -101,17 +101,52 @@
 
 //exercício6:
 
-let num1 = 1;
-let num2 = 2;
-let num3 = 3;
+// let num1 = 1;
+// let num2 = 2;
+// let num3 = 3;
 
-isEven = false;
+// isEven = false;
 
-if ((num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0)) {
-    isEven = true;
-}
+// if ((num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0)) {
+//     isEven = true;
+// }
 
-console.log(isEven);
+// console.log(isEven);
 
 
 //exercício7:
+
+
+let descINSS;
+let descIR;
+let salarioBruto = 3000;
+
+if (salarioBruto <= 1556.94){ //não precisava usar o &&, poderia reduzir código...
+    descINSS = salarioBruto * 0.08;
+} else if (salarioBruto > 1556.95 && salarioBruto <= 2594.92){
+    descINSS = salarioBruto * 0.09;
+} else if (salarioBruto > 2594.93 && salarioBruto <= 5189.82){
+    descINSS = salarioBruto * 0.11;
+} else if (salarioBruto > 5189.82){
+    descINSS = 570.88;
+}
+
+let salarioBase = salarioBruto - descINSS;
+
+if (salarioBase <= 1903.98){
+    descIR = 0;
+} else if (salarioBase <= 2826.65){
+    descIR = (salarioBase * 0.075) - 142.80;
+} else if (salarioBase <= 3751.05){
+    descIR = (salarioBase * 0.15) - 354.80;
+} else if (salarioBase <= 4664.68){
+    descIR = (salarioBase * 0.225) - 630.13;
+} else if (salarioBase > 4664.68){
+    descIR = (salarioBase * 0.275) - 869.36;
+}
+
+let salarioLiquido = salarioBase - descIR;
+
+console.log('salário: R$' + salarioLiquido);
+
+
