@@ -62,11 +62,29 @@
 
 //sem uso de split, reverse e join:
 
-let word = 'tryber';
-let reverseWord = '';
+// let word = 'tryber';
+// let reverseWord = '';
 
-for (index = word.length -1; index >= 0; index -= 1){
-    reverseWord += word[index];
-};
+// for (index = word.length -1; index >= 0; index -= 1){
+//     reverseWord += word[index];
+// };
 
-console.log(reverseWord);
+// console.log(reverseWord);
+
+//DESAFIO DOS ASTERISCOS:
+
+//1)
+
+let n = 5;
+
+let symbol = '*';
+let inputLine = '';
+
+for (let lineIndex = 0; lineIndex < n; lineIndex += 1){
+    inputLine = inputLine + symbol;
+} 
+
+for (let lineIndex = 0; lineIndex < n; lineIndex += 1){
+    console.log(inputLine);
+}
+
