@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      //1
+        let newH1 = document.createElement('h1');
+        newH1.innerText = 'TrybeTrip - Agência de Viagens';
+        document.body.appendChild(newH1);
+      //2
+        const mainContent = document.createElement('main');
+        mainContent.className = 'main-content';
+        document.body.appendChild(mainContent);
+      //3
+        const sectionContent = document.createElement('section');
+        sectionContent.className = 'center-content';
+        mainContent.appendChild(sectionContent);
+      //4
+        const paragraph = document.createElement('p');
+        paragraph.innerText = 'primeiro paragrafo filho';
+        sectionContent.appendChild(paragraph);
+      //5
+        const leftContent = document.createElement('section');
+        leftContent.className = 'left-content';
+        mainContent.appendChild(leftContent); 
+      //6
+        const rightContent = document.createElement('section');
+        rightContent.className = 'right-content';
+        mainContent.appendChild(rightContent);
+      //7
+        const img = document.createElement('img');
+        img.src = 'https://picsum.photos/200';
+        img.className = 'small-image';
+        leftContent.appendChild(img);
+      //8
+        const ulList = document.createElement('ul');
+        const numbersArr = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+        for (let index = 0; index < numbersArr.length; index += 1){
+          const newLi = document.createElement('li');
+          newLi.innerText = numbersArr[index];
+          ulList.appendChild(newLi);  
+        }
+        rightContent.appendChild(ulList);
+      //9
+        for (let index = 0; index < 3; index += 1){
+            const newH3 = document.createElement('h3');
+            newH3.innerText = index;
+            mainContent.appendChild(newH3);
+        }
+    </script>
+  </body>
+</html>
