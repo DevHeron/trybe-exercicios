@@ -12,6 +12,7 @@
         let newH1 = document.createElement('h1');
         newH1.innerText = 'TrybeTrip - Agência de Viagens';
         document.body.appendChild(newH1);
+        newH1.className = 'title';
       //2
         const mainContent = document.createElement('main');
         mainContent.className = 'main-content';
@@ -50,9 +51,26 @@
       //9
         for (let index = 0; index < 3; index += 1){
             const newH3 = document.createElement('h3');
+            newH3.className = 'description';
             newH3.innerText = index;
             mainContent.appendChild(newH3);
         }
+        // removendo section left-content:
+        mainContent.removeChild(leftContent); //ou cria variável com o elemento...
+        // centralizando section com classe right-content:
+
+        const toCentralize = document.getElementsByClassName("right-content")[0];
+        toCentralize.style.marginRight = 'auto';
+        
+        // trocar cor de fundo do elemento-pai da section do passo 3:
+
+        const centerContentParent = document.getElementsByClassName('center-content')[0].parentNode;
+
+        centerContentParent.style.backgroundColor = 'green';
+        // remove ultimos elementos da ul :
+        ulList.lastChild.remove();
+        ulList.lastChild.remove();
+
     </script>
   </body>
 </html>
